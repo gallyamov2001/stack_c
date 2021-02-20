@@ -28,3 +28,11 @@ void remove_stack(stack *s){
 	}
 	s = NULL;
 }
+
+void posh(stack *s, int value){
+	s -> arr[s->crt++] = value;
+}
+
+int pop(stack *s){
+	return s -> arr[s->--crt];
+}
